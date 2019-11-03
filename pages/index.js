@@ -1,21 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Wrapper from '../components/Wrapper';
 import HomepageOne from '../components/direction1/HomepageOne';
+import HomepageTwo from '../components/direction2/HomepageTwo';
 
 import '../styles/bootstrap.scss';
 import '../styles/index.scss';
 
-const Home = props => {
-  const [whichLayout, setWhichLayout] = useState(true);
+const Home = () => {
+  const [whichLayout, setWhichLayout] = useState(false);
 
   const renderPage = layout => {
     if (layout) return <HomepageOne />;
-    return (
-      <>
-        <div>Try again later</div>
-      </>
-    );
+    return <HomepageTwo />;
   };
 
   const onHandleLayoutChange = () => {
@@ -39,10 +36,7 @@ const Home = props => {
         }}
       >
         <button type="button" onClick={onHandleLayoutChange}>
-          Direction 1
-        </button>
-        <button type="button" onClick={onHandleLayoutChange}>
-          Direction 2
+          Change Layout
         </button>
       </div>
 

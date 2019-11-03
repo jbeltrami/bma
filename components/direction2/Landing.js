@@ -1,6 +1,6 @@
 const Landing = () => (
-  <div className="landing">
-    <img src="../../images/background.jpg" alt="" />
+  <div className="landing-two">
+    <img src="./static/background.jpg" alt="" />
     <div className="landing-msg">
       <p className="mb-0">
         Our goal is to become partners with you on your journey towards
@@ -17,3 +17,5 @@ const Landing = () => (
     </div>
   </div>
 );
+
+export default Landing;
