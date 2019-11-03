@@ -1,0 +1,25 @@
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+$cream: #E9D891;
+$teal: #00A99D;
+$purple: #D6B9CE;
+$dkPurple30: shade($purple, 30%);
+$dkPurple40: shade($purple, 40%);
+$dkPurple50: shade($purple, 50%);
+$white: #fff;
+$black: #000;
+
+
+$cursive: 'Sedgwick Ave Display',
+cursive;
+$marker: 'Permanent Marker',
+cursive;
+$sans: 'Raleway',
+sans-serif;
+;
